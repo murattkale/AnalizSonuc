@@ -1,0 +1,392 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="/Content-Type" content="text/html; charset=iso-8859-9">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>
+        İddia Analiz
+    </title>
+    <link rel="shortcut icon" href="/Content/favicon.ico" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+    <link href="/Content/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" />
+    <link href="/Content/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/assets/global/plugins/morris/morris.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/assets/global/plugins/mapplic/mapplic/mapplic.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
+    <link href="/Content/assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/assets/layouts/layout/css/layout.min.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/assets/layouts/layout/css/themes/darkblue.min.css" rel="stylesheet" type="text/css" id="style_color" />
+    <link href="/Content/assets/layouts/layout/css/custom.min.css" rel="stylesheet" type="text/css" />
+    <script src="/Content/assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+    <script src="/Content/assets/global/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="/Content/assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/Content/assets/global/plugins/js.cookie.min.js" type="text/javascript"></script>
+    <script src="/Content/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <script src="/Content/assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+    <script src="/Content/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+    <link href="/Content/assets/global/plugins/datatables/datatables.min.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css" rel="stylesheet" type="text/css" />
+    <script src="/Content/assets/global/scripts/datatable.js" type="text/javascript"></script>
+    <script src="/Content/assets/global/plugins/datatables/datatables.min.js" type="text/javascript"></script>
+    <script src="/Content/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js" type="text/javascript"></script>
+    <script src="/Content/assets/pages/scripts/ui-modals.min.js" type="text/javascript"></script>
+    <script src="/Content/assets/global/plugins/jquery-inputmask/jquery.inputmask.bundle.min.js" type="text/javascript"></script>
+    <script src="/Content/assets/global/plugins/jquery.input-ip-address-control-1.0.min.js" type="text/javascript"></script>
+    <link href="/Content/assets/global/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/assets/global/plugins/select2/css/select2-bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="/Content/assets/global/plugins/select2/js/select2.full.min.js" type="text/javascript"></script>
+    <script src="/Content/assets/global/plugins/bootbox/bootbox.min.js" type="text/javascript"></script>
+    <link href="/Content/assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/assets/global/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/assets/global/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/assets/global/plugins/clockface/css/clockface.css" rel="stylesheet" type="text/css" />
+    <script src="/Content/assets/global/plugins/moment.min.js" type="text/javascript"></script>
+    <script src="/Content/assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.js" type="text/javascript"></script>
+    <script src="/Content/assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js" type="text/javascript"></script>
+    <script src="/Content/assets/global/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js" type="text/javascript"></script>
+    <script src="/Content/assets/global/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+    <script src="/Content/assets/global/plugins/clockface/js/clockface.js" type="text/javascript"></script>
+    <link href="/Content/assets/global/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css" />
+    <script src="/Content/assets/global/plugins/fullcalendar/fullcalendar.min.js" type="text/javascript"></script>
+    <script src="/Content/assets/global/scripts/app.min.js" type="text/javascript"></script>
+
+    <script src="/Content/datatables.min.js"></script>
+    <link href="/Content/general.css" rel="stylesheet" />
+    <script src="/Content/datepicker-tr.js"></script>
+    <script src="/Content/general.js"></script>
+
+
+</head>
+<body class="page-header-fixed page-sidebar-closed-hide-logo page-container-bg-solid">
+
+
+    <div class="page-header navbar navbar-fixed-top">
+        <div class="page-header-inner">
+            <div class="page-logo">
+                <a href="/Pages/Default.aspx">
+                    <img style="height: 50px !important; margin-left: 0px !important; margin-top: 0px !important;" src="/Content/favicon.ico" alt="logo" class="logo-default" />
+                </a>
+                <div class="menu-toggler sidebar-toggler">
+                    <span></span>
+                </div>
+            </div>
+            <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+                <span></span>
+            </a>
+            <div class="top-menu">
+                <ul class="nav navbar-nav pull-right">
+                    <li class="dropdown dropdown-user">
+                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true" aria-expanded="false">
+                            <img alt="" class="img-circle" src="/Content/assets/pages/media/profile/avatar.png">
+                            <span id="lblUserName" class="username username-hide-on-mobile"></span>
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-default">
+                            <li>
+                                <a class="ajaxify" href="#">
+                                    <i class="icon-user"></i>Profil
+                                </a>
+                            </li>
+                            <li>
+                                <a id="btnLogOff" href="#">
+                                    <i class="icon-key"></i>Çıkış
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="clearfix"></div>
+    <div class="page-container">
+        <div class="page-sidebar-wrapper">
+            <div class="page-sidebar navbar-collapse collapse">
+                <ul id="menuLeft" class="page-sidebar-menu  page-header-fixed " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200" style="padding-top: 20px">
+                    <!--<ul class="page-sidebar-menu  page-header-fixed" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">-->
+                </ul>
+            </div>
+        </div>
+        <div class="page-content-wrapper">
+            <div class="page-content">
+                <div class="theme-panel hidden-xs hidden-sm">
+                    <div class="toggler"></div>
+                    <div class="toggler-close" style="display: none;"></div>
+                    <div class="theme-options" style="display: none;">
+                        <div class="theme-option theme-colors clearfix">
+                            <span>TEMA RENK </span>
+                            <ul>
+                                <li class="color-default current tooltips" data-style="default" data-container="body" data-original-title="Default"></li>
+                                <li class="color-darkblue tooltips" data-style="darkblue" data-container="body" data-original-title="Dark Blue"></li>
+                                <li class="color-blue tooltips" data-style="blue" data-container="body" data-original-title="Blue"></li>
+                                <li class="color-grey tooltips" data-style="grey" data-container="body" data-original-title="Grey"></li>
+                                <li class="color-light tooltips" data-style="light" data-container="body" data-original-title="Light"></li>
+                                <li class="color-light2 tooltips" data-style="light2" data-container="body" data-html="true" data-original-title="Light 2"></li>
+                            </ul>
+                        </div>
+                        <div class="theme-option">
+                            <span>TEMA STILI </span>
+                            <select class="layout-style-option form-control input-sm">
+                                <option value="square" selected="selected">KARE KÖŞELER</option>
+                                <option value="rounded">YUVARLATILMIŞ KÖŞELER</option>
+                            </select>
+                        </div>
+                        <div class="theme-option">
+                            <span>DÜZEN </span>
+                            <select class="layout-option form-control input-sm">
+                                <option value="fluid" selected="selected">AKIŞKAN</option>
+                                <option value="boxed">KUTULU</option>
+                            </select>
+                        </div>
+                        <div class="theme-option">
+                            <span>BAŞLIK </span>
+                            <select class="page-header-option form-control input-sm">
+                                <option value="fixed" selected="selected">SABİT</option>
+                                <option value="default">VARSAYILAN</option>
+                            </select>
+                        </div>
+                        <div class="theme-option">
+                            <span>ÜST MENÜ AÇILIR</span>
+                            <select class="page-header-top-dropdown-style-option form-control input-sm">
+                                <option value="light" selected="selected">IŞIK</option>
+                                <option value="dark">KARANLIK</option>
+                            </select>
+                        </div>
+                        <div class="theme-option">
+                            <span>KENAR ÇUBUĞU MODU</span>
+                            <select class="sidebar-option form-control input-sm">
+                                <option value="fixed">SABİT</option>
+                                <option value="default" selected="selected">VARSAYILAN</option>
+                            </select>
+                        </div>
+                        <div class="theme-option">
+                            <span>KENAR ÇUBUĞU STIL </span>
+                            <select class="sidebar-menu-option form-control input-sm">
+                                <option value="accordion" selected="selected">AĞAÇ</option>
+                                <option value="hover">ÜSTÜNE GELİNCE</option>
+                            </select>
+                        </div>
+                        <div class="theme-option">
+                            <span>Sidebar Style </span>
+                            <select class="sidebar-style-option form-control input-sm">
+                                <option value="default" selected="selected">VARSAYILAN</option>
+                                <option value="light">IŞIK</option>
+                            </select>
+                        </div>
+                        <div class="theme-option">
+                            <span>KENAR ÇUBUĞU POZISYONU </span>
+                            <select class="sidebar-pos-option form-control input-sm">
+                                <option value="left" selected="selected">SOL</option>
+                                <option value="right">SAĞ</option>
+                            </select>
+                        </div>
+                        <div class="theme-option">
+                            <span>ALT BILGI </span>
+                            <select class="page-footer-option form-control input-sm">
+                                <option value="fixed">SABİT</option>
+                                <option value="default" selected="selected">VARSAYILAN</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="page-bar">
+                    <ul id="pagebar" class="page-breadcrumb"></ul>
+                </div>
+                <div class="page-bar">
+                    <ul style="padding: 0px;" id="pagebar1" class="page-breadcrumb"></ul>
+                </div>
+
+                <div class="page-content-wrapper">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="portlet box green">
+                                <div class="portlet-title">
+                                    <div class="caption">
+                                        <i class="fa fa-globe"></i>İddia Analiz
+                                        <div class="tools"></div>
+                                    </div>
+                                </div>
+                                <div class="portlet-body">
+                                    <div class="form-horizontal">
+                                        <div class="form-group">
+                                            <div class="col-md-2">
+                                                <label class="control-label" for="drpOkul">Min Oran </label>
+                                                <input type="number" id="txtoranFiltre1" value="83" />
+                                            </div>
+                                            <div class="col-md-2">
+                                                <label class="control-label" for="drpOkul">Max Oran </label>
+                                                <input type="number" id="txtoranFiltre2" value="89" />
+                                            </div>
+                                            <div class="col-md-2">
+                                                <label class="control-label" for="drpOkul">Maç Kodu Min </label>
+                                                <input type="number" id="txtMacKoduMin" value="" />
+                                            </div>
+                                            <div class="col-md-2">
+                                                <label class="control-label" for="drpOkul">Maç Kodu Max </label>
+                                                <input type="number" id="txtMacKoduMax" value="" />
+                                            </div>
+                                            <div class="col-md-2">
+                                                <label class="control-label" for="drpOkul">Maç Sayısı </label>
+                                                <input type="number" id="txtmacSayisi" value="10" />
+                                            </div>
+                                            <div class="col-md-2">
+                                                <hr />
+                                                <a id="btnAra" class="btn btn-success"><i class="fa fa-plus"></i>Analiz </a>
+                                                <hr />
+                                                <div id="strZaman">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="dt">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="page-footer">
+        <div class="page-footer-inner">
+            2018 &copy;  İddia Analiz
+            <div class="scroll-to-top">
+                <i class="icon-arrow-up"></i>
+            </div>
+        </div>
+        <div class="quick-nav-overlay"></div>
+    </div>
+    <div class="modal fade" id="ajax" role="basic" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="/Content/assets/global/img/loading-spinner-grey.gif" alt="" class="loading">
+                    <span>&nbsp;&nbsp;Bekleyiniz... </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/Content/assets/global/plugins/morris/morris.min.js" type="text/javascript"></script>
+    <script src="/Content/assets/global/plugins/morris/raphael-min.js" type="text/javascript"></script>
+    <script src="/Content/assets/global/plugins/mapplic/js/hammer.min.js" type="text/javascript"></script>
+    <script src="/Content/assets/global/plugins/mapplic/js/jquery.easing.js" type="text/javascript"></script>
+    <script src="/Content/assets/global/plugins/mapplic/js/jquery.mousewheel.js" type="text/javascript"></script>
+    <script src="/Content/assets/global/plugins/mapplic/mapplic/mapplic.js" type="text/javascript"></script>
+    <script src="/Content/assets/global/plugins/counterup/jquery.waypoints.min.js" type="text/javascript"></script>
+    <script src="/Content/assets/global/plugins/counterup/jquery.counterup.min.js" type="text/javascript"></script>
+    <script src="/Content/assets/global/plugins/jquery.sparkline.min.js" type="text/javascript"></script>
+    <script src="/Content/assets/global/plugins/amcharts/amcharts/amcharts.js" type="text/javascript"></script>
+    <script src="/Content/assets/global/plugins/amcharts/amcharts/serial.js" type="text/javascript"></script>
+    <script src="/Content/assets/global/plugins/amcharts/amcharts/pie.js" type="text/javascript"></script>
+    <script src="/Content/assets/global/plugins/amcharts/amcharts/radar.js" type="text/javascript"></script>
+    <script src="/Content/assets/global/plugins/amcharts/amcharts/themes/light.js" type="text/javascript"></script>
+    <script src="/Content/assets/global/plugins/amcharts/amcharts/themes/patterns.js" type="text/javascript"></script>
+    <script src="/Content/assets/global/plugins/amcharts/amcharts/themes/chalk.js" type="text/javascript"></script>
+    <script src="/Content/assets/global/plugins/amcharts/ammap/ammap.js" type="text/javascript"></script>
+    <script src="/Content/assets/global/plugins/amcharts/ammap/maps/js/worldLow.js" type="text/javascript"></script>
+    <script src="/Content/assets/global/plugins/amcharts/amstockcharts/amstock.js" type="text/javascript"></script>
+    <script src="/Content/assets/layouts/layout/scripts/layout.min.js" type="text/javascript"></script>
+    <script src="/Content/assets/layouts/layout/scripts/demo.js" type="text/javascript"></script>
+    <script src="/Content/assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
+    <script src="/Content/assets/layouts/global/scripts/quick-nav.min.js" type="text/javascript"></script>
+
+
+    <script>
+        $(function () {
+            //İNPUT FORM  CONTROL
+            $("input[type*='number'],input[type*='text'],input[type*='password']").addClass("form-control");
+
+            //İS NUMERİC
+            jQuery('.isnumeric').keyup(function () {
+                this.value = this.value.replace(/[^0-9\.]/g, '');
+            });
+
+            //DATE PİCKER
+            $('.date-picker').datepicker({
+                //rtl: App.isRTL(),
+                //orientation: "left",
+                autoclose: true,
+                minDate: 0
+            });
+            //TİME PİCKER
+            $('.timepicker-24').timepicker({
+                autoclose: true,
+                minuteStep: 5,
+                showSeconds: false,
+                showMeridian: false,
+                defaultTime: false,
+                timeFormat: 'h:mm:ss p'
+            });
+
+            //SELECT
+            $.fn.select2.defaults.set("theme", "bootstrap");
+            var placeholder = "Seçiniz";
+            $("select").select2({
+                placeholder: placeholder,
+                width: null
+            });
+            $("select").on("select2:open", function () {
+                if ($(this).parents("[class*='has-']").length) {
+                    var classNames = $(this).parents("[class*='has-']")[0].className.split(/\s+/);
+                    for (var i = 0; i < classNames.length; ++i) {
+                        if (classNames[i].match("has-")) {
+                            $("body > .select2-container").addClass(classNames[i]);
+                        }
+                    }
+                }
+            });
+            $(".select2").click(function () {
+                $(".select2-container--open").addClass("z99999");
+            });
+
+            //$.fn.dataTable.Api.register('sum()', function () {
+            //    return this.flatten().reduce(function (a, b) {
+            //        if (typeof a === 'string') {
+            //            a = a.replace(/[^\d.-]/g, '') * 1;
+            //        }
+            //        if (typeof b === 'string') {
+            //            b = b.replace(/[^\d.-]/g, '') * 1;
+            //        }
+
+            //        return a + b;
+            //    }, 0);
+            //});
+
+            //$.fn.dataTable.Api.register('avg()', function () {
+            //    var data = this.flatten();
+            //    var sum = data.reduce(function (a, b) {
+            //        return (a * 1) + (b * 1); // cast values in-case they are strings
+            //    }, 0);
+
+            //    return sum / data.length;
+            //});
+
+            //$.fn.dataTable.Api.register('column().title()', function () {
+            //    var colheader = this.header();
+            //    return $(colheader).text().trim();
+            //});
+        });
+    </script>
+
+</body>
+
+</html>
