@@ -18,7 +18,7 @@ namespace AnalizSonuc
         public static Dictionary<string, string> rekabetTemp = new Dictionary<string, string>();
 
         public static string code = ""; 
-        public static int codeii = 0;
+        public static int codeii = 0; 
         public static int ii = 0;
         public static string url = "http://istatistik.nesine.com/HeadToHead/Index.aspx?matchCode={0}";
         public static string url1 = "http://istatistik.nesine.com/headtohead/router.aspx?matchcode={0}&page={1}&languageıd=1";
